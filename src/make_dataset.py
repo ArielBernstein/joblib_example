@@ -10,7 +10,7 @@ The data used in this exercise is derived from Capital Bikeshare
 """
 
 
-bike_data = pd.read_csv("../data/day.csv")
+bike_data = pd.read_csv("../data/bike_data_raw.csv")
 bike_data.info()
 
 
