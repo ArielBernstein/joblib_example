@@ -10,7 +10,7 @@ The data used in this exercise is derived from Capital Bikeshare
 """
 
 
-bike_data = pd.read_csv("../../data/raw/daily-bike-share.csv")
+bike_data = pd.read_csv("../data/day.csv")
 bike_data.info()
 
 
@@ -26,7 +26,7 @@ relevant_features = [
     "atemp",
     "hum",
     "windspeed",
-    "rentals",
+    "cnt",
 ]
 bike_data = bike_data[relevant_features]
 
@@ -46,4 +46,4 @@ bike_data.info()
 # Export dataset
 # --------------------------------------------------------------
 
-bike_data.to_pickle("../../data/processed/bike_data_processed.pkl")
+bike_data.to_pickle("../data/bike_data_processed.pkl")
